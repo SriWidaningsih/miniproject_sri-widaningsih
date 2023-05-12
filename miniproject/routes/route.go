@@ -35,4 +35,12 @@ func New(e *echo.Echo, db *gorm.DB) {
 	user.PUT("/:id", controllers.UpdateUserController)
 	user.DELETE("/:id", controllers.DeleteUserController)
 
+	//Order by Admin
+	order := e.Group("/order")
+	order.GET("", controllers.GetOrdersController)
+	order.GET("/:id", controllers.GetOrderController)
+	order.POST("", controllers.CreateOrderController)
+	order.DELETE("/:id", controllers.DeleteOrderController)
+	order.PUT("/:id", controllers.UpdateOrderController)
+
 }

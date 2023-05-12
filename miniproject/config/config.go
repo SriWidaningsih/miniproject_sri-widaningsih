@@ -2,6 +2,7 @@ package config
 
 import (
 	"fmt"
+	"miniprojek/models"
 
 	"miniproject/models"
 
@@ -38,5 +39,5 @@ func InitDB() *gorm.DB {
 }
 
 func InitMigrate() {
-	DB.AutoMigrate(&models.User{})
+	DB.AutoMigrate(&models.User{}, &models.Product{}, &models.OrderDetail{})
 }
