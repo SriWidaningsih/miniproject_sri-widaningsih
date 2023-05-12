@@ -39,5 +39,6 @@ func InitDB() *gorm.DB {
 }
 
 func InitMigrate() {
+
 	DB.AutoMigrate(&models.User{}, &models.Product{}, &models.OrderDetail{})
 }
