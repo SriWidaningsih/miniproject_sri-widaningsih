@@ -10,7 +10,7 @@ import (
 
 	"github.com/labstack/echo/v4"
 
-	"miniprojek/config"
+	"miniproject/config"
 )
 
 // get product by id
