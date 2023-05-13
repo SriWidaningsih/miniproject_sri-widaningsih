@@ -2,7 +2,7 @@ package config
 
 import (
 	"fmt"
-	"miniprojek/models"
+	"miniproject/models"
 
 	"miniproject/models"
 
